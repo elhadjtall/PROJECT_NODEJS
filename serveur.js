@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 
 // Renvoie le contenu du fichier index.ejs
 app.get("/", function(req, res) {
-    res.render("index");
+    res.render("index", {pseudo: "Elhadj TALL", age: 28});
 })
 
 
