@@ -5,6 +5,11 @@ const app = express();
 // Definier le modele ejs template 
 app.set("view engine", "ejs");
 
+// Renvoie le contenu du fichier index.ejs
+app.get("/", function(req, res) {
+    res.render("index");
+})
+
 
 // Definir le port du serveur
 app.listen(3000, () => {
