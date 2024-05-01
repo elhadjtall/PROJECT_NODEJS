@@ -7,7 +7,12 @@ app.set("view engine", "ejs");
 
 // Renvoie le contenu du fichier index.ejs
 app.get("/", function(req, res) {
-    res.render("index", {pseudo: "Elhadj TALL", age: 28});
+    // Declarer une constante
+    var object = {
+        pseudo : "Elhadj TALL",
+        age: 28
+    }
+    res.render("index",);
 })
 
 
